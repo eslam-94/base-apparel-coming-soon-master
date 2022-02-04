@@ -1,0 +1,130 @@
+body{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+}
+main{
+  display: flex;
+}
+h1{
+  margin-top: 140px;
+    font-size: 65px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 16px;
+    line-height: 1;
+}
+span{
+  font-weight: 300;
+  color: hsl(0, 36%, 70%);
+}
+p{
+  margin-top: 27px;
+  margin-bottom: 45px;
+    font-size: 17px;
+    max-width: 455px;
+    color: hsl(0, 36%, 70%);
+}
+input{
+  height: 53px;
+  width: 300px;
+}
+footer{
+  margin-top: auto;
+    align-self: center;
+}
+.onMobile{
+  margin: 20px auto;
+  display: none;
+}
+.left{
+  background:no-repeat url(images/bg-pattern-desktop.svg);
+    padding: 66px 163px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.form{
+  position: relative;
+  max-width: 445px;
+}
+.form-control{
+  border-color: hsl(0, 36%, 70%);
+  width: 445px;
+  padding-left: 30px;
+}
+.form-control::placeholder{
+  color: hsl(0, 36%, 70%);
+  opacity: 0.5;
+}
+.form-control:focus{
+  box-shadow: 0 0 0;
+  border-color:  hsl(0, 36%, 70%);
+}
+#error{
+  position: absolute;
+  bottom: 15px;
+    right: 110px;
+    display: none;
+}
+#errorMes{
+  display: none;
+  padding: 0 30px;
+  margin-top: 13px;
+  font-size: 13px;
+}
+.btn{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 55px;
+    width: 95px;
+    border-style: none;
+box-shadow: 3px 7px 20px 0px hsl(0deg 36% 70%);
+    background-image: linear-gradient(135deg, hsl(0deg, 100%, 98%), hsl(0deg, 74%, 74%));
+}
+.btn:focus{
+  box-shadow: 0 0 0;
+  border-color:  hsl(0, 36%, 70%);
+}
+.btn:hover{
+  opacity: 0.7;
+}
+.attribution { font-size: 11px; text-align: center;margin:auto 0 0;}
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width:500px){
+  *{
+    max-width: 375px;
+  }
+  h1{
+    margin-top: 35px;
+    font-size: 35px;
+    text-align: center;
+  }
+  p{
+    text-align: center;
+    padding: 0 10px;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .onMobile{
+    display: block;
+  }
+  .left{
+    padding: 15px 0 0 0;
+  }
+  .form{
+    align-self: center;
+    max-width: 340px;
+  }
+  .form-control{
+    width: 340px;
+  }
+  .desktop{
+    display: none;
+  }
+  .attribution{
+    margin-top: 25px;
+  }
+}
